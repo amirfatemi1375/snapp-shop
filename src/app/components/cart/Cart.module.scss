@@ -1,0 +1,48 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $algha-black-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background-color: $card-background;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px $algha-black;
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .emptyMessage{
+    text-align: center;
+  }
+  .closeButton {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .closeButton:hover {
+    color: $red-2;
+  }
+  
+  .modalTitle {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-color;
+  }

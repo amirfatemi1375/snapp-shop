@@ -1,0 +1,44 @@
+'use client';
+import Image from 'next/image';
+import styles from './productDetail.module.scss';
+import { formatNumber } from '@/utils/seprator';
+import AddToCartButton from '@/components/cart/AddToCartBtn';
+import products from '@/data/product.json';
+
+interface ProductPageProps {
+  params: { id: string }
+}
+
+const ProductPage = ({ params }: ProductPageProps) => {
+  const product = products.find((product) => product.id === params.id);
+
+  if (!product) {
+    return <div>محصول پیدا نشد</div>;
+  }
+
+  return (
+    <div className={styles.container}>
+      <section className={styles.productDetail}>
+        <figure className={styles.productImage}>
+          <Image
+            src={product.imageUrl}
+            alt={product.name}
+            width={400}
+            height={400}
+          />
+        </figure>
+
+        <article className={styles.productInfo}>
+          <h1 className={styles.productTitle}>{product.name}</h1>
+          <p className={styles.productDescription}>{product.description}</p>
+          <p className={styles.productPrice}>
+            <span>{formatNumber(product.price)} تومان</span>
+            <AddToCartButton product={product} />
+          </p>
+        </article>
+      </section>
+    </div>
+  );
+};
+
+export default ProductPage;
