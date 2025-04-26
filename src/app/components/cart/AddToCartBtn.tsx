@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
-import useCartStore from '@/store/useCartStore';
-import Button from '../ui/button/Button';
+import useCartStore from "@/store/useCartStore";
+import Button from "../ui/button/Button";
+import { Product } from "@/types/product";
 
-const AddToCartButton = ({ product }: { product: any }) => {
+const AddToCartButton = ({ product }: { product: Product }) => {
   const { addToCart, isInCart } = useCartStore();
 
   const handleClick = () => {
@@ -14,7 +15,7 @@ const AddToCartButton = ({ product }: { product: any }) => {
 
   return (
     <Button onClick={handleClick}>
-      {isInCart(product.id) ? 'در سبد هست' : 'افزودن به سبد خرید'}
+      {isInCart(product.id) ? "در سبد هست" : "افزودن به سبد خرید"}
     </Button>
   );
 };
