@@ -1,6 +1,6 @@
-import products from '@/data/product.json';
-import ProductCard from '@/components/product/ProductCard';
-import styles from './Products.module.scss';
+import products from "@/data/product.json";
+import ProductCard from "@/components/product/ProductCard";
+import styles from "./Products.module.scss";
 
 const ProductList = () => {
   return (

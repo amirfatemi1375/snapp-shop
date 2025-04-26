@@ -1,4 +1,3 @@
-
 # 🛒 SnappShop - E-commerce Mini Task
 
 SnappShop is a small but powerful e-commerce demo project built with **Next.js 14 App Router**, demonstrating clean architecture, state management, responsive UI, and data fetching strategies. This project was created as part of a task to showcase best practices in modern frontend development.
@@ -7,7 +6,7 @@ SnappShop is a small but powerful e-commerce demo project built with **Next.js 1
 
 ## Folder Structure
 
-```plaintext
+````plaintext
 SnappShop/
 │
 ├── routes/                     # Application pages (routing)
@@ -38,7 +37,7 @@ SnappShop/
 ├── utils/                      # Utility functions
 │   └── seprator.ts             # Helper function to format numbers (e.g., for currency)
 ├── next.config.js              # Next.js configuration
-└── package.json  
+└── package.json
 
 ## ⚙️ Data Fetching Strategy
 
@@ -61,7 +60,7 @@ This project uses **static JSON data** for product listing and product details. 
 ```bash
 git clone https://github.com/your-username/snappshop.git
 cd snappshop
-```
+````
 
 ### 2. Install dependencies
 
@@ -126,4 +125,3 @@ This will generate a static optimized version of the site and serve it.
 For any questions or feedback, feel free to reach out via email or GitHub.
 
 ---
-

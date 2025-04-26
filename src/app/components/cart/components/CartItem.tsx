@@ -1,8 +1,8 @@
-'use client';
-import styles from './CartItem.module.scss';
-import { formatNumber } from '@/utils/seprator';
-import Button from '@/components/ui/button/Button';
-import Image from 'next/image';
+"use client";
+import styles from "./CartItem.module.scss";
+import { formatNumber } from "@/utils/seprator";
+import Button from "@/components/ui/button/Button";
+import Image from "next/image";
 
 type CartItemProps = {
   id: string;
@@ -26,7 +26,13 @@ const CartItem = ({
   return (
     <article className={styles.cartItem}>
       <div className={styles.itemDetails}>
-        <Image src={imageUrl} alt={name} className={styles.itemImage} width="200" height="200" />
+        <Image
+          src={imageUrl}
+          alt={name}
+          className={styles.itemImage}
+          width="200"
+          height="200"
+        />
         <div className={styles.itemInfo}>
           <h3>{name}</h3>
           <p>{formatNumber(price)} تومان</p>

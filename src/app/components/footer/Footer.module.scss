@@ -1,40 +1,40 @@
 .footer {
-    background-color: $gray-1;
-    color: $card-background;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-  }
-  
-  .text {
-    font-size: 1rem;
-    margin-bottom: 12px;
-  }
-  
+  background-color: $gray-1;
+  color: $card-background;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.text {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.socialIcon {
+  color: $card-background;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: $blue-1;
+}
+@media (max-width: 600px) {
   .socialLinks {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+    flex-direction: column;
+    gap: 8px;
   }
-  
-  .socialIcon {
-    color: $card-background;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .socialIcon:hover {
-    color: $blue-1;
-  }
-  @media (max-width: 600px) {
-    .socialLinks {
-      flex-direction: column;
-      gap: 8px;
-    }
-  }
+}

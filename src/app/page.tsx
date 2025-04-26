@@ -1,9 +1,8 @@
-import ProductList from '@/routes/products/page';
+import ProductList from "@/routes/products/page";
 export default function Home() {
   return (
-  <>
-      <ProductList/>
-      
+    <>
+      <ProductList />
     </>
   );
 }

@@ -1,6 +1,5 @@
-
-import { create } from 'zustand';
-import { Product } from '@/types/product';
+import { create } from "zustand";
+import { Product } from "@/types/product";
 interface CartState {
   cartItems: Product[];
   addToCart: (product: Product) => void;
@@ -32,14 +31,13 @@ const useCartStore = create<CartState>((set, get) => ({
     }
     set((state) => ({
       cartItems: state.cartItems.map((item) =>
-        item.id.toString() === id
-          ? { ...item, quantity } 
-          : item
+        item.id.toString() === id ? { ...item, quantity } : item
       ),
     }));
   },
   isInCart: (id) => get().cartItems.some((item) => item.id.toString() === id),
-  toggleCartModal: () => set((state) => ({ openCartModal: !state.openCartModal })),
+  toggleCartModal: () =>
+    set((state) => ({ openCartModal: !state.openCartModal })),
 }));
 
 export default useCartStore;

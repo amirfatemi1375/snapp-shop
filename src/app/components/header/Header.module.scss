@@ -68,15 +68,15 @@
   justify-content: center;
   align-items: center;
 }
-.hamburger{
+.hamburger {
   display: none;
 }
 
 @media (max-width: 600px) {
   .nav {
-    display: none; 
+    display: none;
   }
-  .logo{
+  .logo {
     display: none;
   }
   .hamburger {

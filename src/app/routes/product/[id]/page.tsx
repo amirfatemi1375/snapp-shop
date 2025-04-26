@@ -1,12 +1,12 @@
-'use client';
-import Image from 'next/image';
-import styles from './productDetail.module.scss';
-import { formatNumber } from '@/utils/seprator';
-import AddToCartButton from '@/components/cart/AddToCartBtn';
-import products from '@/data/product.json';
+"use client";
+import Image from "next/image";
+import styles from "./productDetail.module.scss";
+import { formatNumber } from "@/utils/seprator";
+import AddToCartButton from "@/components/cart/AddToCartBtn";
+import products from "@/data/product.json";
 
 interface ProductPageProps {
-  params: { id: string }
+  params: { id: string };
 }
 
 const ProductPage = ({ params }: ProductPageProps) => {
