@@ -15,7 +15,7 @@ src/
 ├── components/
 │ ├── cart/
 │ │ ├── CartModal.tsx
-│ │ ├── components/CartItem.tsx
+│ │ ├── CartItem.tsx
 │ │ └── AddToCartBtn.tsx
 │ ├── product/
 │ │ └── ProductCard.tsx
@@ -26,7 +26,7 @@ src/
 ├── store/
 │ └── useCartStore.ts
 ├── utils/
-│ └── seprator.ts (Number formatting)
+│ └── separator.ts (Number formatting)
 ├── data/
 │ └── product.json (Static product data)
 └── styles/
