@@ -6,31 +6,33 @@ SnappShop is a small but powerful e-commerce demo project built with **Next.js 1
 
 ## Folder Structure
 
+````plaintext
 src/
 ├── app/
-│ ├── routes/
-│ │ ├── page.tsx (Home page)
-│ │ └── product/[id]/page.tsx (Product detail page)
-│ └── layout.tsx (Root Layout)
+│   ├── routes/
+│   │   ├── page.tsx (Home page)
+│   │   └── product/[id]/page.tsx (Product detail page)
+│   └── layout.tsx (Root Layout)
 ├── components/
-│ ├── cart/
-│ │ ├── CartModal.tsx
-│ │ ├── CartItem.tsx
-│ │ └── AddToCartBtn.tsx
-│ ├── product/
-│ │ └── ProductCard.tsx
-│ ├── ui/
-│ │ └── button/Button.tsx
+│   ├── cart/
+│   │   ├── CartModal.tsx
+│   │   ├── CartItem.tsx
+│   │   └── AddToCartBtn.tsx
+│   ├── product/
+│   │   └── ProductCard.tsx
+│   ├── ui/
+│   │   └── button/Button.tsx
 ├── hooks/
-│ └── useOutsideClick.ts
+│   └── useOutsideClick.ts
 ├── store/
-│ └── useCartStore.ts
+│   └── useCartStore.ts
 ├── utils/
-│ └── separator.ts (Number formatting)
+│   └── separator.ts (Number formatting)
 ├── data/
-│ └── product.json (Static product data)
+│   └── product.json (Static product data)
 └── styles/
-└── globals.scss
+    └── globals.scss
+
 
 ## ⚙️ Data Fetching Strategy
 
@@ -53,7 +55,7 @@ This project uses **static JSON data** for product listing and product details. 
 ```bash
 git clone https://github.com/your-username/snappshop.git
 cd snappshop
-```
+````
 
 ### 2. Install dependencies
 
