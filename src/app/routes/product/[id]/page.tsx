@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./productDetail.module.scss";
 import { formatNumber } from "@/utils/seprator";
-import AddToCartButton from "@/components/cart/add-to-cart-button/AddToCartBtn";
+import { AddToCartBtn } from "@/components/cart/add-to-cart-button";
 import products from "@/data/product.json";
 
 const ProductPage = ({ params }: ProductPageProps) => {
@@ -29,7 +29,7 @@ const ProductPage = ({ params }: ProductPageProps) => {
           <p className={styles.productDescription}>{product.description}</p>
           <p className={styles.productPrice}>
             <span>{formatNumber(product.price)} تومان</span>
-            <AddToCartButton product={product} />
+            <AddToCartBtn product={product} />
           </p>
         </article>
       </section>

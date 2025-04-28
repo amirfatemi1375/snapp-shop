@@ -2,7 +2,7 @@
 import styles from "./Cart.module.scss";
 import useCartStore from "@/store/useCartStore";
 import { formatNumber } from "@/utils/seprator";
-import Button from "@/components/ui/button/Button";
+import { Button } from "@/components/ui/button";
 import useOutsideClick from "@/hooks/useOutsideClick";
 import CartItem from "./cart-item/CartItem";
 

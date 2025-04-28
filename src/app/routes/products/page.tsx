@@ -1,5 +1,5 @@
 import products from "@/data/product.json";
-import ProductCard from "@/components/product-card/ProductCard";
+import { ProductCard } from "@/components/product-card";
 import styles from "./Products.module.scss";
 
 const ProductList = () => {
