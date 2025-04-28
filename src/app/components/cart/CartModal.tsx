@@ -1,6 +1,6 @@
 "use client";
 import styles from "./Cart.module.scss";
-import useCartStore from "@/store/useCartStore";
+import {useCartStore} from "@/store";
 import { formatNumber } from "@/utils/seprator";
 import { Button } from "@/components/ui/button";
 import {useOutsideClick} from "@/hooks";

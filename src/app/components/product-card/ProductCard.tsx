@@ -4,7 +4,7 @@ import styles from "./ProductCard.module.scss";
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
 import { formatNumber } from "@/utils/seprator";
-import useCartStore from "@/store/useCartStore";
+import {useCartStore} from "@/store";
 import { ProductCardProps } from "@/components/product-card/types";
 const ProductCard = ({ name, imageUrl, price, link, id }: ProductCardProps) => {
   const { addToCart, isInCart } = useCartStore();

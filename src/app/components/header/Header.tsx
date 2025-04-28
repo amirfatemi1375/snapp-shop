@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./Header.module.scss";
-import useCartStore from "@/store/useCartStore";
+import {useCartStore} from "@/store";
 import { useState } from "react";
 
 export default function Header() {
