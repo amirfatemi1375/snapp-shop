@@ -3,17 +3,7 @@ import styles from "./CartItem.module.scss";
 import { formatNumber } from "@/utils/seprator";
 import Button from "@/components/ui/button/Button";
 import Image from "next/image";
-
-type CartItemProps = {
-  id: string;
-  name: string;
-  price: number;
-  quantity: number;
-  imageUrl: string;
-  updateQuantity: (id: string, quantity: number) => void;
-  removeFromCart: (id: string) => void;
-};
-
+import { CartItemProps } from "./types/CartItem.model";
 const CartItem = ({
   id,
   name,

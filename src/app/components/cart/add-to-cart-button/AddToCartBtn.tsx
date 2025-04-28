@@ -1,10 +1,10 @@
 "use client";
 
 import useCartStore from "@/store/useCartStore";
-import Button from "../ui/button/Button";
-import { Product } from "@/types/product";
+import Button from "../../ui/button/Button";
+import { IProduct } from "@/types/product.model";
 
-const AddToCartButton = ({ product }: { product: Product }) => {
+const AddToCartButton = ({ product }: { product: IProduct }) => {
   const { addToCart, isInCart } = useCartStore();
 
   const handleClick = () => {

@@ -2,14 +2,10 @@
 import Image from "next/image";
 import styles from "./productDetail.module.scss";
 import { formatNumber } from "@/utils/seprator";
-import AddToCartButton from "@/components/cart/AddToCartBtn";
+import AddToCartButton from "@/components/cart/add-to-cart-button/AddToCartBtn";
 import products from "@/data/product.json";
 
-interface ProductPageProps {
-  params: { id: string };
-}
-
-const ProductPage = ({ params }: ProductPageProps) => {
+const ProductPage = ({ params }: IProductPageProps) => {
   const product = products.find((product) => product.id === params.id);
 
   if (!product) {

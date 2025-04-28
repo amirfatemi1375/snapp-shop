@@ -1,15 +1,6 @@
 import { create } from "zustand";
-import { Product } from "@/types/product";
-interface CartState {
-  cartItems: Product[];
-  addToCart: (product: Product) => void;
-  removeFromCart: (id: string) => void;
-  updateQuantity: (id: string, quantity: number) => void;
-  isInCart: (id: string) => boolean;
-  openCartModal: boolean;
-  toggleCartModal: () => void;
-}
-const useCartStore = create<CartState>((set, get) => ({
+import { ICartState } from "./types/CartState.model";
+const useCartStore = create<ICartState>((set, get) => ({
   cartItems: [],
   openCartModal: false,
   addToCart: (product) =>

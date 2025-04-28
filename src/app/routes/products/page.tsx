@@ -1,5 +1,5 @@
 import products from "@/data/product.json";
-import ProductCard from "@/components/product/ProductCard";
+import ProductCard from "@/components/product-card/ProductCard";
 import styles from "./Products.module.scss";
 
 const ProductList = () => {
@@ -14,7 +14,6 @@ const ProductList = () => {
             imageUrl={product.imageUrl}
             price={product.price}
             link={product.id}
-            aria-label={`View details for ${product.name}`}
           />
         ))
       ) : (

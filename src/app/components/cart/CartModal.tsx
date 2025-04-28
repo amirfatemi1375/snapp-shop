@@ -4,7 +4,7 @@ import useCartStore from "@/store/useCartStore";
 import { formatNumber } from "@/utils/seprator";
 import Button from "@/components/ui/button/Button";
 import useOutsideClick from "@/hooks/useOutsideClick";
-import CartItem from "./components/CartItem";
+import CartItem from "./cart-item/CartItem";
 
 const CartModal = () => {
   const {
