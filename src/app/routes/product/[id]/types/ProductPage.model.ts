@@ -1,3 +1,3 @@
-interface IProductPageProps {
+type ProductPageProps = {
   params: { id: string };
-}
+};

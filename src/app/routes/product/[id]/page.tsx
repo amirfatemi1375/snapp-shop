@@ -5,7 +5,7 @@ import { formatNumber } from "@/utils/seprator";
 import AddToCartButton from "@/components/cart/add-to-cart-button/AddToCartBtn";
 import products from "@/data/product.json";
 
-const ProductPage = ({ params }: IProductPageProps) => {
+const ProductPage = ({ params }: ProductPageProps) => {
   const product = products.find((product) => product.id === params.id);
 
   if (!product) {
