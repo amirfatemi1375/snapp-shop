@@ -4,6 +4,7 @@ import styles from "./productDetail.module.scss";
 import { formatNumber } from "@/utils/seprator";
 import { AddToCartBtn } from "@/components/cart/add-to-cart-button";
 import products from "@/data/product.json";
+import { ProductPageProps } from "./types/ProductPage.model";
 
 const ProductPage = ({ params }: ProductPageProps) => {
   const product = products.find((product) => product.id === params.id);

@@ -1,3 +1,3 @@
-type ProductPageProps = {
+export type ProductPageProps = {
   params: { id: string };
 };

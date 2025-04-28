@@ -1,9 +1,9 @@
 "use client";
 import styles from "./CartItem.module.scss";
 import { formatNumber } from "@/utils/seprator";
-import Button from "@/components/ui/button/Button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { CartItemProps } from "./types/CartItem.model";
+import { CartItemProps } from "@/components/cart/cart-item/types";
 const CartItem = ({
   id,
   name,
