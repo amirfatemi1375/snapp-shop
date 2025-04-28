@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./ProductCard.module.scss";
-import Button from "@/components/ui/button/Button";
+import {Button} from "@/components/ui/button";
 import Image from "next/image";
 import { formatNumber } from "@/utils/seprator";
 import useCartStore from "@/store/useCartStore";
