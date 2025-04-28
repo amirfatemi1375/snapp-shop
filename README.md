@@ -9,29 +9,49 @@ SnappShop is a small but powerful e-commerce demo project built with **Next.js 1
 ````plaintext
 src/
 ├── app/
-│   ├── routes/
-│   │   ├── page.tsx (Home page)
-│   │   └── product/[id]/page.tsx (Product detail page)
-│   └── layout.tsx (Root Layout)
+│   ├── page.tsx                  # Home page - Product Listing (SSR)
+│   └── product/
+│       └── [id]/page.tsx          # Product Detail Page (SSR)
+│
 ├── components/
 │   ├── cart/
 │   │   ├── CartModal.tsx
 │   │   ├── CartItem.tsx
 │   │   └── AddToCartBtn.tsx
+│   │   └── index.ts
 │   ├── product/
-│   │   └── ProductCard.tsx
+│   │   ├── ProductCard.tsx
+│   │   └── index.ts
 │   ├── ui/
-│   │   └── button/Button.tsx
+│   │   ├── button/
+│   │   │   └── Button.tsx
+│   │   └── index.ts
+│   └── index.ts
+│
 ├── hooks/
-│   └── useOutsideClick.ts
+│   ├── useOutsideClick.ts
+│   └── index.ts
+│
 ├── store/
-│   └── useCartStore.ts
+│   ├── useCartStore.ts
+│   └── index.ts
+│
+├── types/
+│   ├── CartItem.model.ts
+│   ├── Product.model.ts
+│   └── index.ts
+│
 ├── utils/
-│   └── separator.ts (Number formatting)
+│   ├── separator.ts
+│   └── index.ts
+│
 ├── data/
-│   └── product.json (Static product data)
+│   └── product.json
+│
 └── styles/
-    └── globals.scss
+    ├── globals.scss
+    └── font.scss
+    └── variables.scss
 
 
 ## ⚙️ Data Fetching Strategy
@@ -40,7 +60,7 @@ This project uses **static JSON data** for product listing and product details. 
 
 | Page                              | Data Fetching Type                                     | Method                                               |
 | --------------------------------- | ------------------------------------------------------ | ---------------------------------------------------- |
-| Product Listing (`/products`)     | Static Site Generation (SSG)                           | `fetch()` from JSON file at build time               |
+| Product Listing (`/products`)     |  Server-Side Rendering (SSR)                           | Data is resolved in Server Component from local JSON            |
 | Product Detail (`/products/[id]`) | Server-Side Rendering (SSR-like with Server Component) | Data is resolved in Server Component from local JSON |
 | Cart Modal                        | Client Side (Zustand)                                  | Cart is managed locally in state                     |
 
