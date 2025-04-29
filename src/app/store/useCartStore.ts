@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { ICartState } from "@/store/types";
+import { ICartState } from "@/store/models";
 const useCartStore = create<ICartState>((set, get) => ({
   cartItems: [],
   openCartModal: false,
