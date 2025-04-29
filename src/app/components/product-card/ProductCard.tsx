@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import styles from "./ProductCard.module.scss";
-import {Button} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { formatNumber } from "@/utils/seprator";
-import {useCartStore} from "@/store";
+import { formatNumber } from "@/utils";
+import { useCartStore } from "@/store";
 import { ProductCardProps } from "@/components/product-card/types";
 const ProductCard = ({ name, imageUrl, price, link, id }: ProductCardProps) => {
   const { addToCart, isInCart } = useCartStore();

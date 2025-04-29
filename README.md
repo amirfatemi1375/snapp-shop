@@ -36,7 +36,7 @@ src/
 │   ├── useCartStore.ts
 │   └── index.ts
 │
-├── types/
+├── models/
 │   ├── CartItem.model.ts
 │   ├── Product.model.ts
 │   └── index.ts

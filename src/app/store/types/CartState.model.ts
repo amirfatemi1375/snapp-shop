@@ -1,4 +1,4 @@
-import { IProduct } from "@/types/";
+import { IProduct } from "@/models";
 export interface ICartState {
   cartItems: IProduct[];
   addToCart: (product: IProduct) => void;

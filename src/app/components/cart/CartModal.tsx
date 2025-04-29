@@ -1,9 +1,9 @@
 "use client";
 import styles from "./Cart.module.scss";
-import {useCartStore} from "@/store";
-import { formatNumber } from "@/utils/seprator";
+import { useCartStore } from "@/store";
+import { formatNumber } from "@/utils";
 import { Button } from "@/components/ui/button";
-import {useOutsideClick} from "@/hooks";
+import { useOutsideClick } from "@/hooks";
 import CartItem from "./cart-item/CartItem";
 
 const CartModal = () => {

@@ -1,8 +1,8 @@
 "use client";
 
-import {useCartStore} from "@/store";
+import { useCartStore } from "@/store";
 import { Button } from "@/components/ui/button";
-import { IProduct } from "@/types";
+import { IProduct } from "@/models";
 
 const AddToCartButton = ({ product }: { product: IProduct }) => {
   const { addToCart, isInCart } = useCartStore();
